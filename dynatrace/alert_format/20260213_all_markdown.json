@@ -1,0 +1,25 @@
+{
+  "msg_type": "interactive",
+  "card": {
+    "header": {
+      "title": {
+        "tag": "plain_text",
+        "content": "🚨 {ProblemTitle}（{State}）"
+      }
+    },
+    "elements": [
+      {
+        "tag": "markdown",
+        "content": "**🖥 系统:** {Tags[system]}\n**🏷 品牌:** {Tags[brand]}\n**📦 业务:** {Tags[bu]}\n\n**🆔 问题编号:** `{ProblemID}`\n**🔔 告警状态:** `{State}`\n**💥 异常服务:** `{ImpactedEntity}`\n**🌐 影响服务范围:** {NamesOfImpactedEntities}\n**🛠 受影响服务:** {ImpactedEntityNames}\n**⚠️ 问题严重程度:** `{ProblemSeverity}`\n**👥 问题影响面:** `{ProblemImpact}`"
+      },
+      {
+        "tag": "markdown",
+        "content": "**🧾 问题详情**\n{ProblemDetailsMarkdown}"
+      },
+      {
+        "tag": "markdown",
+        "content": "[🔗 打开 Dynatrace 问题](https://qlf23711.apps.dynatrace.com/ui/apps/dynatrace.davis.problems/problem/{PID})"
+      }
+    ]
+  }
+}
